@@ -1,0 +1,144 @@
+body{
+    font-family: Bungee;
+    font-size: auto;
+}
+
+.header{
+    padding: 0px 50px;
+    position: relative;
+    height: 90px;
+    list-style-type: none;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0px 50px 0px 0px;
+}
+
+ul{
+    position: absolute;
+    left: 50%;
+    top: 26.5px; /* CCC logo is 90px. Text in screenshots provided was 11/58ths (~19%) height of logo. Font = 90px*19% = 17px.
+                To center to the top of text: 90/2 = 45. -10 (top padding) = 35. To center text: Font is 17px /2 = 8.5. 35-8.5 = 26.5px */
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+}
+
+a:link{
+    color: #7944e6;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #7944e6;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #10fdff;
+    text-decoration: none;
+}
+
+.truckbox{
+    background-color: #ff00ff;
+    padding: 2.5%;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foodtruck{
+    width: 40%;
+    margin: 0 auto;
+}
+
+p{
+    line-height: 1.15;
+    font-weight: bold;
+}
+h1{
+    line-height: 0;
+    font-size: 20px;
+}
+.foods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid #7944e6;
+    width: 40%;
+    margin: 20px;
+}
+
+.item-text{
+    padding: 5% 0%;
+}
+
+.item-CO{
+    width:100%;
+}
+
+.item-CR{
+    width:100%;
+}
+
+@media screen and (min-width: 768px) {
+    ul{
+        position: absolute;
+        left: auto;
+        right: 0px;
+        top: 26.5px; /* CCC logo is 90px. Text in screenshots provided was 11/58ths (~19%) height of logo. Font = 90px*19% = 17px.
+                    To center to the top of text: 90/2 = 45. -10 (top padding) = 35. To center text: Font is 17px /2 = 8.5. 35-8.5 = 26.5px */
+        padding: 0px;
+        margin: 0px;
+        width: 300px; 
+    } 
+    .truckbox{
+        background-color: #ff00ff;
+        padding: 2.5% 7.5%;
+        margin: 0px 50px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .foodtruck{
+        width: 45%;
+        display:inline;
+        margin: 0px;
+    }
+    .lorem{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        margin: 0px 50px 0px 0px;
+        width: 45%;
+    }
+        .foods{
+            flex-direction: row;
+            margin: 0px 50px;
+    }
+        .items{
+            margin:20px 50px;
+        }
+
+        .item-CO{
+            width:100%;
+            padding:6%;
+        }
+
+        .item-CR{
+            width:100%;
+        }
+
+}
